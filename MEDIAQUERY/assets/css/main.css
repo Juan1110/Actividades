@@ -6,6 +6,14 @@
     padding: 0 5rem;
 }
 
+.izquierda{
+
+}
+
+.derecha {
+
+}
+
 @media (mix-width: 575.98px) {
     h1 {
         font-size: 2.4rem;
