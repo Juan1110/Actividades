@@ -1,0 +1,33 @@
+.header{
+    background-color: #ccc;
+}
+
+#seccion1{
+    padding: 0 5rem;
+}
+
+@media (min-width: 576px) {
+    .header {
+        background-color: yellow;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        background-color: red;
+        text-align: center;
+        
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        background-color: green;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        background-color: orange;
+    }
+}
