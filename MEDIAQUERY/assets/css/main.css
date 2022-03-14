@@ -7,10 +7,12 @@
 }
 
 .izquierda{
-
+    margin-right: 50%;
+    float: left;
 }
 
 .derecha {
+    margin-left: 50%;
 
 }
 
