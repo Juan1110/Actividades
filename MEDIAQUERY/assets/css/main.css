@@ -6,9 +6,24 @@
     padding: 0 5rem;
 }
 
+@media (mix-width: 575.98px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    #logo {
+        max-width: 100%;
+    }
+}
+
 @media (min-width: 576px) {
     .header {
         background-color: yellow;
+    }
+    #logo {
+        max-width: 50%;
     }
 }
 
