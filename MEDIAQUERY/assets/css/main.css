@@ -1,21 +1,24 @@
-.header{
+.header {
     background-color: #ccc;
 }
 
-#seccion1{
-    padding: 0 5rem;
+#seccion1 {
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.izquierda{
-    margin-right: 50%;
-    float: left;
+.izquierda {
+   flex: 0 0 auto;
+    width: 100%;
 }
 
 .derecha {
-    margin-left: 50%;
+    flex: 0 0 auto;
+    width: 100%;
 }
 
-@media (mix-width: 575.98px) {
+@media (max-width: 575.98px) {
     h1 {
         font-size: 2.4rem;
     }
@@ -40,13 +43,33 @@
     .header {
         background-color: red;
         text-align: center;
-        
     }
+
+    .izquierda {
+        width: 50%;
+    }
+    
+    .derecha {
+        width: 50%;
+    }
+    
 }
 
 @media (min-width: 992px) {
     .header {
         background-color: green;
+    }
+
+    .izquierda {
+        width: 30%;
+    }
+    
+    .derecha {
+        width: 70%;
+    }
+
+    #logo {
+        min-width: 100%;
     }
 }
 
