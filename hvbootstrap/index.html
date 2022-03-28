@@ -40,13 +40,13 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropProyectos">
                                 <li>
-                                    <a href="#" class="dropdown-item">Proyecto 1 </a>
+                                    <a href="#proyecto1" class="dropdown-item">Proyecto 1 </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="dropdown-item">Proyecto 2 </a>
+                                    <a href="#proyecto2" class="dropdown-item">Proyecto 2 </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="dropdown-item">Proyecto 3 </a>
+                                    <a href="#proyecto3" class="dropdown-item">Proyecto 3 </a>
                                 </li>
                             </ul>
                         </li>
@@ -80,7 +80,8 @@
                             </a>
                         </li>
                         <li class="list-group-item">
-                            <a href="#" target="_blank">
+                            <a href="https://www.instagram.com/invites/contact/?i=f4pou6xfcn89&utm_content=nvs2605"
+                                target="_blank">
                                 <i class="fa-brands fa-instagram fa-2x"></i>
                             </a>
                         </li>
@@ -192,42 +193,117 @@
                 <div class="col">
                     <div class="card shadow">
                         <div class="card-body">
-                            <h5 class="card-title">Proyecto A</h5>
+                            <h5 class="card-title" id="proyecto1">Proyecto 1</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquam reiciendis
                                 aspernatur repudiandae, hic tempore, illo at officia, rem fuga aperiam laborum
                                 obcaecati nam repellat quidem voluptatum ea fugit dolorum!</p>
-                            <a href="" class="btn btn-primary rounded-pill">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#proyectoA">
                                 <i class="fas fa-eye"></i>
                                 Ver proyecto
-                            </a>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="proyectoA" tabindex="-1" aria-labelledby="proyectoALabel"
+                                aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="proyectoA">JavaScript</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae obcaecati atque quisquam, illo fugit nobis? Officiis eius quo porro suscipit error explicabo et dolor sit quisquam. Commodi nobis maxime quam!
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary ">
+                                                <a href="https://github.com/Juan1110/Actividades.github.io/tree/main/html%20y%20css" target="_blank" class="text-decoration-none">Save changes</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card shadow">
                         <div class="card-body">
-                            <h5 class="card-title">Proyecto B</h5>
+                            <h5 class="card-title" id="proyecto2">Proyecto 2</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquam reiciendis
                                 aspernatur repudiandae, hic tempore, illo at officia, rem fuga aperiam laborum
                                 obcaecati nam repellat quidem voluptatum ea fugit dolorum!</p>
-                            <a href="" class="btn btn-primary rounded-pill">
-                                <i class="fas fa-eye"></i>
-                                Ver proyecto
-                            </a>
+                             <!-- Button trigger modal -->
+                             <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                             data-bs-target="#proyectoB">
+                             <i class="fas fa-eye"></i>
+                             Ver proyecto
+                         </button>
+                         <!-- Modal -->
+                         <div class="modal fade" id="proyectoB" tabindex="-1" aria-labelledby="proyectoBLabel"
+                             aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                             <div class="modal-dialog modal-dialog-centered">
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <h5 class="modal-title" id="proyectoB">Bootstrap</h5>
+                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                             aria-label="Close"></button>
+                                     </div>
+                                     <div class="modal-body">
+                                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. In minus veritatis voluptates vero recusandae perspiciatis laboriosam. Dolore alias, asperiores eveniet accusamus illum doloremque ipsam, velit optio dolores laboriosam delectus ea!
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button type="button" class="btn btn-secondary"
+                                             data-bs-dismiss="modal">Close</button>
+                                         <button type="button" class="btn btn-primary">
+                                            <a href="https://github.com/Juan1110/Actividades.github.io/tree/main/curriculum" target="_blank" class="text-decoration-none">Save changes</a>
+                                         </button>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card shadow">
                         <div class="card-body">
-                            <h5 class="card-title">Proyecto C</h5>
+                            <h5 class="card-title" id="proyecto3">Proyecto 3</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquam reiciendis
                                 aspernatur repudiandae, hic tempore, illo at officia, rem fuga aperiam laborum
                                 obcaecati nam repellat quidem voluptatum ea fugit dolorum!</p>
-                            <a href="" class="btn btn-primary rounded-pill">
-                                <i class="fas fa-eye"></i>
-                                Ver proyecto
-                            </a>
+                             <!-- Button trigger modal -->
+                             <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                             data-bs-target="#proyectoC">
+                             <i class="fas fa-eye"></i>
+                             Ver proyecto
+                            </button>
+                         <!-- Modal -->
+                         <div class="modal fade" id="proyectoC" tabindex="-1" aria-labelledby="proyectoCLabel"
+                             aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                             <div class="modal-dialog modal-dialog-centered">
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <h5 class="modal-title" id="proyectoC">CSS</h5>
+                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                             aria-label="Close"></button>
+                                     </div>
+                                     <div class="modal-body">
+                                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia facilis aliquid amet suscipit delectus, fuga in fugit ipsum! Saepe, asperiores mollitia recusandae provident porro ipsum reiciendis ab libero aliquam qui?
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button type="button" class="btn btn-secondary"
+                                             data-bs-dismiss="modal">Close</button>
+                                         <button type="button" class="btn btn-primary">
+                                            <a href="https://github.com/Juan1110/Actividades.github.io/tree/main/posicionamiento" target="_blank" class="text-decoration-none">Save changes</a>
+                                         </button>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
                         </div>
                     </div>
                 </div>
@@ -239,33 +315,37 @@
         <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./assets/img/monte.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/img/nieve.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/img/puente.jpg" class="d-block w-100" alt="...">
-                  </div>
+                    <div class="carousel-item active">
+                        <img src="./assets/img/monte.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/nieve.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/puente.jpg" class="d-block w-100" alt="...">
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+            </div>
         </div>
     </section>
-  
 
     <!-- Selecionar elemento en un contenido de la página -->
     <!-- <div class="container">
