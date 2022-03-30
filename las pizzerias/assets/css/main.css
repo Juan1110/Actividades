@@ -71,6 +71,14 @@ th {
     padding-bottom: 1rem;
 }
 
+.posicion {
+    background-color: #636FA4;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
 @media (min-height: 550px) {
     .content {
         height: 500px;
