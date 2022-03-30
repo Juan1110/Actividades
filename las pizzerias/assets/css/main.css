@@ -35,7 +35,7 @@ th {
     height: 80vh;
     background-color: #fff;
     border-radius: 15px;
-    overflow-x: scroll;
+    overflow-y: scroll;
     padding: 2rem;
     position: relative;
 }
@@ -90,6 +90,10 @@ th {
     margin-top: 1rem;
 }
 
+i {
+    color: rgb(236, 236, 53);
+}
+
 @media (min-height: 550px) {
     .content {
         height: 500px;
@@ -104,6 +108,6 @@ th {
         display: table-cell;
     }
     content {
-        overflow-x: none;
+        overflow-x: auto;
     }
 }
