@@ -13,7 +13,7 @@ function verificarIntento()
 {
     let intentoUsuario = Number(numIntento.value);
 
-    if(cantidadIntentos === 0)
+    if(cantidadIntentos === 1)
         intentos.textContent = "Intentos anteriores: ";
 
     intentos.textContent += intentoUsuario + ' ';
@@ -21,11 +21,13 @@ function verificarIntento()
     if(intentoUsuario === numeroAleatorio)
     {
         ultimoResultado.textContent = "¡Felicidades! ¡Lo adivinaste!";
+        ultimoResultado.style.backgroundColor = "green"
     } else if(cantidadIntentos === 10) {
         ultimoResultado.textContent = "¡Fin del juego!";
         altoBajo.textContent = "";
     } else {
         ultimoResultado.textContent = "¡Incorrecto!";
+        ultimoResultado.style.backgroundColor = "red"
         if(intentoUsuario < numeroAleatorio)
         {
             altoBajo.textContent = "El número es muy bajo"
@@ -37,6 +39,12 @@ function verificarIntento()
     cantidadIntentos ++;
     numIntento.vale = "";
     numIntento.focus();
+}
+
+function finalizarJuego()
+{
+    numIntento.disabled = true;
+    btnAdivinar.disabled = true;
 }
 
 btnAdivinar.addEventListener('click', verificarIntento);
