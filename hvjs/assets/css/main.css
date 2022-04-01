@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Lato:ital,wght@0,100;0,400;1,700&family=Merriweather:ital@1&family=Source+Sans+Pro:wght@300&display=swap');
+
+h1 {
+    font-family: 'BIZ UDPMincho', serif;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+p {
+    font-family: 'BIZ UDPMincho', serif;
+}
+
