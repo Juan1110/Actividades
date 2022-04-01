@@ -23,6 +23,7 @@ function verificarIntento()
         ultimoResultado.textContent = "¡Felicidades! ¡Lo adivinaste!";
     } else if(cantidadIntentos === 10) {
         ultimoResultado.textContent = "¡Fin del juego!";
+        altoBajo.textContent = "";
     } else {
         ultimoResultado.textContent = "¡Incorrecto!";
         if(intentoUsuario < numeroAleatorio)
