@@ -13,4 +13,12 @@ let cantidadIntentos = 0;
 function verificarIntento()
 {
     let intentoUsuario = Number(numIntento.value);
+
+    if(cantidadIntentos === 0)
+        intentos.textContent = "Intentos anteriores: ";
+
+    intentos .textContent += intentoUsuario + '';
 }
+
+btnAdivinar.addEventListener('click', verificarIntento);
+ 
