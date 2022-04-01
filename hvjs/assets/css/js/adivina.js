@@ -8,6 +8,7 @@ let numeroAleatorio = Math.floor(Math.random() * 100 + 1);
 
 numIntento.value = "";
 let cantidadIntentos = 0;
+let btnReset; 
 
 function verificarIntento()
 {
@@ -21,18 +22,20 @@ function verificarIntento()
     if(intentoUsuario === numeroAleatorio)
     {
         ultimoResultado.textContent = "¡Felicidades! ¡Lo adivinaste!";
-        ultimoResultado.style.backgroundColor = "green"
+        ultimoResultado.style.backgroundColor = "green";
+        finalizarJuego();
     } else if(cantidadIntentos === 10) {
         ultimoResultado.textContent = "¡Fin del juego!";
         altoBajo.textContent = "";
+        finalizarJuego();
     } else {
         ultimoResultado.textContent = "¡Incorrecto!";
-        ultimoResultado.style.backgroundColor = "red"
+        ultimoResultado.style.backgroundColor = "red";
         if(intentoUsuario < numeroAleatorio)
         {
-            altoBajo.textContent = "El número es muy bajo"
+            altoBajo.textContent = "El número es muy bajo";
         } else {
-            altoBajo.textContent = "El número es muy alto"
+            altoBajo.textContent = "El número es muy alto";
         }
     }
 
@@ -45,6 +48,25 @@ function finalizarJuego()
 {
     numIntento.disabled = true;
     btnAdivinar.disabled = true;
+
+    btnReset = document.createElement("button")
+    btnReset.textContent = "Iniciar el juego de nuevo"
+    document.body.append(btnReset)
+    btnReset.addEventListener("click", reiniciar)
+}
+
+function reiniciar()
+{
+    cantidadIntentos = 1;
+    intentos.textContent = "";
+    ultimoResultado.textContent = "";
+    altoBajo.textContent = ""; 
+    btnReset.parentNode.removeChild(btnReset);
+    numIntento.disabled = false;
+    btnAdivinar.disabled = false;
+    ultimoResultado.style.backgroundColor = "white";
+    numeroAleatorio = Math.floor(Math.random() * 100 + 1);
+
 }
 
 btnAdivinar.addEventListener('click', verificarIntento);
