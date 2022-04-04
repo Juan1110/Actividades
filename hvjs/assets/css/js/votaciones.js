@@ -8,3 +8,4 @@ if (numero >= 3)
 }else {
      console.log("perdio la materia");
  }
+ 
