@@ -22,9 +22,6 @@ switch(voto) {
     case "4":
         candidato4++;
         break;
-    default:
-        voto ++;
-        alert("Voto inválido, ingrese nuevamente su voto");
     }
 }
 
