@@ -49,19 +49,6 @@
 // {
 //     console.log(i);
 // }
-
-let dineroEnCaja = Number(prompt("Ingrese el monto de dinero"));
-
-while(dineroEnCaja > 0)
-{
-    let presupuestoProyecto = Number(prompt("Ingrese el monto del proyecto"));
-    dineroEnCaja -= presupuestoProyecto;
-    alert("Se asignaron recursos para su proyecto");
-
-}
-
-alert("Se han acabado los recursos");
-
 // let candidato1 = 0;
 // let candidato2 = 0;
 // let candidato3 = 0;
@@ -84,3 +71,22 @@ alert("Se han acabado los recursos");
 //         break;
 
 // }
+let CantidadDeProyectos = 0;
+let dineroEnCaja = Number(prompt("Ingrese el monto de dinero"));
+
+while(dineroEnCaja > 0)
+{
+    let presupuestoProyecto = Number(prompt("Ingrese el monto del proyecto"));
+
+    if(dineroEnCaja >= presupuestoProyecto)
+    {
+        alert("Se asignaron recursos para su proyecto");
+        CantidadDeProyectos ++;
+        dineroEnCaja -= presupuestoProyecto;
+    }else{
+        alert("El monto de su proyecto sobrepasa el presupuesto");
+    }
+    
+}
+
+alert("Se ha(n) aprobado: " + CantidadDeProyectos + " proyecto(s)");
