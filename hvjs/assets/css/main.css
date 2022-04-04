@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Lato:ital,wght@0,100;0,400;1,700&family=Merriweather:ital@1&family=Source+Sans+Pro:wght@300&display=swap');
 
+
+
+
 h1 {
     font-family: 'BIZ UDPMincho', serif;
     text-align: center;
@@ -9,4 +12,29 @@ h1 {
 p {
     font-family: 'BIZ UDPMincho', serif;
 }
+
+
+body{
+    background-color: cadetblue;
+
+}
+
+.container finalizarJuego{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content{
+    max-width: 960px;
+    width: 100%;
+    height: 70vh;
+    background-color: tan;
+    border-radius: 15px;
+    overflow: auto;
+    padding: 2rem;
+    position: relative;
+}
+
 
