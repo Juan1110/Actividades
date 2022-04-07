@@ -1,22 +1,20 @@
-// const ocultar = document.getElementById("ocultar");
-const btnOcul = document.getElementById("btnOcul");
+// function cambiarcolor()
+// {
+//     document.getElementById("btnOcul").style.backgroundColor = 'blue';
+// }
+// function quitarcolor()
+// {
+//     document.getElementById("btnOcul").style.backgroundColor = "";
+// }
+// function ocultar()
+// {
+//     document.getElementById('container').style.display = 'none';
+//     if(btnOcul.textContent == "Ocultar")
+//     {
+//         btnOcul.textContent = "Mostrar";
+//     }
+// }
+// function
 
-
- 
-
-function ocultar()
-{
-    document.getElementById('content').style.display = 'none';
-    btnOcul.textContent = "Mostrar" 
-    btnOcul.addEventListener("click", mostrar)
-
-}
-function mostrar()
-{
-    document.getElementById('content').style.display = 'block';
-    btnOcul.textContent = "Ocultar" 
-    btnOcul.addEventListener("click", ocultar)
-
-}
-
-btnOcul.addEventListener("click", ocultar)
+// btnOcul.addEventListener("mouseover", cambiarcolor);
+// btnOcul.addEventListener("mouseout", quitarcolor);
